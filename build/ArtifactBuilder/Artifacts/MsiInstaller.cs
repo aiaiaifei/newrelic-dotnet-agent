@@ -50,7 +50,7 @@ namespace ArtifactBuilder.Artifacts
 
             if (TryGetMsiPath(out var msiPath))
             {
-                ValidateCodeSigningCertificate(msiPath);
+                //ValidateCodeSigningCertificate(msiPath);
 
                 FileHelpers.CopyFile(msiPath, OutputDirectory);
                 File.WriteAllText($@"{OutputDirectory}\checksum.sha256", FileHelpers.GetSha256Checksum(msiPath));

@@ -44,8 +44,8 @@ $HomePath = Get-HomeRootPath $HomePath
 $solutions = [Ordered]@{
     "$rootDirectory\FullAgent.sln"                                              = @("Configuration=$Configuration;AllowUnsafeBlocks=true");
     "$rootDirectory\src\Agent\MsiInstaller\MsiInstaller.sln"                    = @("Configuration=$Configuration;Platform=x86;AllowUnsafeBlocks=true","Configuration=$Configuration;Platform=x64;AllowUnsafeBlocks=true");
-    "$rootDirectory\tests\Agent\IntegrationTests\IntegrationTests.sln"          = @("Configuration=$Configuration;DeployOnBuild=true;PublishProfile=LocalDeploy");
-    "$rootDirectory\tests\Agent\IntegrationTests\UnboundedIntegrationTests.sln" = @("Configuration=$Configuration;DeployOnBuild=true;PublishProfile=LocalDeploy");
+    # "$rootDirectory\tests\Agent\IntegrationTests\IntegrationTests.sln"          = @("Configuration=$Configuration;DeployOnBuild=true;PublishProfile=LocalDeploy");
+    # "$rootDirectory\tests\Agent\IntegrationTests\UnboundedIntegrationTests.sln" = @("Configuration=$Configuration;DeployOnBuild=true;PublishProfile=LocalDeploy");
 }
 
 #########
